@@ -77,7 +77,7 @@ namespace OrangeTech.Web.Controllers
                 var user = _mapper.Map<RegisterViewModel, User>(registerViewModel);
                 user.RoleId = _roleService.GetByName("Guest").RoleId;
                 _userService.Create(user);
-                return RedirectToAction("LoginAsync");
+                return RedirectToAction("Index", "Home");
             }
 
             return View(registerViewModel);
