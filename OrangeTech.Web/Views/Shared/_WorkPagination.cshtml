@@ -1,0 +1,52 @@
+﻿@model ReflectionIT.Mvc.Paging.IPagingList
+
+
+@{
+    var start = this.Model.StartPageIndex;
+    var stop = this.Model.StopPageIndex;
+}
+
+
+<br />
+@if (this.Model.PageCount > 1)
+{
+    <ul class="pager">
+
+        @if (start > 1)
+        {
+            <li class="pager-item">
+                <a class="pager-link active-page" asp-route-page="1" asp-controller="Work" asp-action="GetAll" aria-label="First" onclick="filter(1)"><span aria-hidden="true">1</span></a>
+            </li>
+        }
+
+        @if (this.Model.PageIndex > 1)
+        {
+            <li class="pager-item">
+                <a class="pager-link active-page" aria-label="Previous" asp-route-page="@(Model.PageIndex - 1)" asp-controller="Work" asp-action="GetAll"><span aria-hidden="true">&laquo;</span></a>
+            </li>
+        }
+
+        @for (int i = start; i <= stop; i++)
+        {
+            <li class="pager-item @((Model.PageIndex == i) ? "active" : null)">
+                <a class="pager-link active-page" , asp-route-page="@i" asp-controller="Work" asp-action="GetAll">@i</a>
+            </li>
+        }
+
+        @if (this.Model.PageIndex < this.Model.PageCount)
+        {
+            <li class="pager-item">
+                <a class="pager-link active-page" aria-label="Next" asp-route-page="@(Model.PageIndex + 1)" asp-controller="Work" asp-action="GetAll"><span aria-hidden="true">&raquo;</span></a>
+            </li>
+        }
+
+        @if (stop < this.Model.PageCount)
+        {
+            <li class="pager-item">
+                <a class="pager-link active-page" aria-label="Last" asp-route-page="@Model.PageCount" asp-controller="Work" asp-action="GetAll"><span aria-hidden="true">@this.Model.PageCount</span></a>
+            </li>
+        }
+
+    </ul>
+}
+<link href="~/css/pagination.css" rel="stylesheet" />

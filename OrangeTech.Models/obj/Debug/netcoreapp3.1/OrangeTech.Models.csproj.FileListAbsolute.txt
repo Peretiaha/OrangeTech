@@ -1,0 +1,9 @@
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.Models\bin\Debug\netcoreapp3.1\OrangeTech.Models.deps.json
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.Models\bin\Debug\netcoreapp3.1\OrangeTech.Models.dll
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.Models\bin\Debug\netcoreapp3.1\OrangeTech.Models.pdb
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.Models\obj\Debug\netcoreapp3.1\OrangeTech.Models.AssemblyInfoInputs.cache
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.Models\obj\Debug\netcoreapp3.1\OrangeTech.Models.AssemblyInfo.cs
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.Models\obj\Debug\netcoreapp3.1\OrangeTech.Models.dll
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.Models\obj\Debug\netcoreapp3.1\OrangeTech.Models.pdb
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.Models\obj\Debug\netcoreapp3.1\OrangeTech.Models.csprojAssemblyReference.cache
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.Models\obj\Debug\netcoreapp3.1\OrangeTech.Models.csproj.CoreCompileInputs.cache

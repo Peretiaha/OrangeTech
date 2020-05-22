@@ -1,0 +1,15 @@
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.DAL\bin\Debug\netcoreapp3.1\OrangeTech.DAL.deps.json
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.DAL\bin\Debug\netcoreapp3.1\OrangeTech.DAL.runtimeconfig.json
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.DAL\bin\Debug\netcoreapp3.1\OrangeTech.DAL.runtimeconfig.dev.json
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.DAL\bin\Debug\netcoreapp3.1\OrangeTech.DAL.dll
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.DAL\bin\Debug\netcoreapp3.1\OrangeTech.DAL.pdb
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.DAL\bin\Debug\netcoreapp3.1\OrangeTech.Models.dll
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.DAL\bin\Debug\netcoreapp3.1\OrangeTech.Models.pdb
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.DAL\obj\Debug\netcoreapp3.1\OrangeTech.DAL.csprojAssemblyReference.cache
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.DAL\obj\Debug\netcoreapp3.1\OrangeTech.DAL.AssemblyInfoInputs.cache
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.DAL\obj\Debug\netcoreapp3.1\OrangeTech.DAL.AssemblyInfo.cs
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.DAL\obj\Debug\netcoreapp3.1\OrangeTech.DAL.csproj.CopyComplete
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.DAL\obj\Debug\netcoreapp3.1\OrangeTech.DAL.dll
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.DAL\obj\Debug\netcoreapp3.1\OrangeTech.DAL.pdb
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.DAL\obj\Debug\netcoreapp3.1\OrangeTech.DAL.csproj.CoreCompileInputs.cache
+E:\Projects\OrangeTech\OrangeTech\OrangeTech.DAL\obj\Debug\netcoreapp3.1\OrangeTech.DAL.genruntimeconfig.cache

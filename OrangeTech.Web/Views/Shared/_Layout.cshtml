@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OrangeTech</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <title>ORANGETECH</title>
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/header.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="~/img/icon.jpg">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="conteiner">
+                <div class="row">
+                    <div class="header-content-left">
+                        <div class="header-icon">
+                            <a id="logo" asp-area="" asp-controller="Home" asp-action="Index">
+                                <img src="~/img/logo-icon.jpg" class="image-icon">
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="header-content-right">
+                        <div class="content-right">
+                            <div class="contact">
+                                <div class="contacts-list">
+                                    <ul>
+                                        <li class="phone">
+                                            <a class="phonelink" href="tel:+380(95)2478205">
+                                                <span itemprop="telephone">
+                                                    <span>+380 (95) 247 8205</span>
+                                                </span>
+                                            </a>
+
+                                        </li>
+                                        <li class="adress">
+                                            <span>г. Харьков, ул. Борщаговская, 154</span>
+                                        </li>
+                                        <li class="post">
+                                            <span>orangetech@gmail.com</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mainmenu">
+                            <nav class="nav">
+                                <a class="nav__link"  asp-area="" asp-controller="Home" asp-action="Index">Главная</a>
+                                <a class="nav__link" href="#about">О нас</a>
+                                <a class="nav__link" asp-area="" asp-controller="Service" asp-action="GetAll">Услуги</a>
+                                <a class="nav__link" asp-area="" asp-controller="Work" asp-action="GetAll">Наши работы</a>
+                                <a class="nav__link" href="#">Контакты</a>
+                                @Html.Partial("_LoginPartial")
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </nav>
+    </header>    
+    <main>
+        @RenderBody()
+    </main>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

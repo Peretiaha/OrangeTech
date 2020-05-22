@@ -1,0 +1,57 @@
+﻿@model ReflectionIT.Mvc.Paging.IPagingList<OrangeTech.Web.ViewModels.ServiceShortViewModel>
+@addTagHelper *,ReflectionIT.Mvc.Paging
+
+
+@{
+    ViewData["Title"] = "Услуги";
+}
+<div class="container">
+    <h1>Наши услуги</h1>
+
+    @if (User.IsInRole("Admin"))
+    {
+        <div class="btn-create">
+            <p>
+                <button type="button" class="btn btn-primary">
+                    <a class="link" asp-action="Create">Добавить новую услугу</a>
+                </button>
+            </p>
+        </div>
+    }
+
+    <table class="table">
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td width="30px">
+                        <img height="150" width="200" class="image-fit" src="data:image/jpeg;base64,@(Convert.ToBase64String(item.Image))" />
+                    </td>
+                    <td>
+                        <p class="name">@Html.ActionLink(item.Name, "Details", new { serviceId = item.ServiceId }, new { @class = "name-link" })</p>
+                        @Html.DisplayFor(modelItem => item.ShortDescription)
+                    </td>
+                    <td class="btns">
+                        <button type="button" class="btn btn-primary">
+                            @Html.ActionLink("Details", "Details", new { serviceId = item.ServiceId }, new { @class = "link" })
+                        </button>
+                        <br />
+                        <br />
+
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <button type="button" class="btn btn-danger">
+                                @Html.ActionLink("Delete", "Remove", new { serviceId = item.ServiceId }, new { @class = "link" })
+                            </button>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<partial name="_ServicePagination" model="Model" />
+
+
+<link rel="stylesheet" type="text/css" href="~/css/Works.css" />

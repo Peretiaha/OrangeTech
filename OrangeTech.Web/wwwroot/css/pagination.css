@@ -1,0 +1,31 @@
+﻿.pager-item {
+    display: inline;
+    -o-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 2em;
+    height: 3em;
+}
+
+.pager-link {
+    width: 80%;
+    text-align: center;
+    color: #737373;
+}
+
+.pager {
+    display: flex;
+    -o-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.active-page {
+    position: relative;
+    color: #4A4A4A;
+}
